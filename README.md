@@ -1,7 +1,4 @@
-Project: Titanic Survival Prediction - Machine Learning Project
-Course: CSCI 5371 - Machine Learning
-Name: Shivam Patel
-
+# Titanic Survival Prediction - Machine Learning Project
 
 -------------------------------------
 Description
@@ -9,25 +6,25 @@ Description
 This project predicts whether a passenger survived the Titanic disaster using multiple machine learning models.
 
 The workflow includes data cleaning, feature engineering, preprocessing, model training, model comparison, and an interactive prediction
-section where user can input new passenger details. 
+section where the user can input new passenger details. 
 
 
 -------------------------------------
 Project Overview
 -------------------------------------
-The goal of this project is to built and compare several ML classifiers to determine which performs best in predicting Titanic passenger survival.
+The goal of this project is to build and compare several ML classifiers to determine which performs best in predicting Titanic passenger survival.
 
 The following models were trained and evaluated
 	- Logistic regression (With multiple C values)
 	- K-Nearest Neighbors (different distance & neighbors)
-	- Neural Network (MLPClassifier) (Various architecture)
+	- Neural Network (MLPClassifier) (Various architectures)
 
-The model with the highest best accuracy is automatically selected as the final best model.
+The model with the highest accuracy is automatically selected as the final best model.
 
 -------------------------------------
 Dataset
 -------------------------------------
-The dataset is loaded directly from a public Github Source:
+The dataset is loaded directly from a public GitHub source:
 	https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv
 
 It includes the following key features:
@@ -47,7 +44,7 @@ Data Cleaning & Preprocessing
 -------------------------------------
 The script performs multiple cleaning steps:
 01. Handle missing values
-	- Fill missing Age with mean
+	- Fill the missing Age with the mean
 	- Fill missing Embarked with the mode
 
 02. Drop irrelevant features
@@ -58,7 +55,7 @@ The script performs multiple cleaning steps:
 	- One-hot encode Embarked -> (Embarked_C, Embarked_Q, Embarked_S)
 
 04. Feature scaling
-	- StandardScaler is used so models especially kNN & Neural Network perform correctly
+	- StandardScaler is used so models, especially kNN & Neural Network, perform correctly
 
 -------------------------------------
 Models Trained
@@ -108,7 +105,7 @@ At the end of the script, the user can enter real values:
 - Fare
 - Embarked location (C/Q/S)
 
-This script converts the input into models required format, scales them, and prints:
+This script converts the input into models required model format, scales them, and prints:
 0 -> Not survived
 1 -> Survived
 
@@ -136,7 +133,7 @@ The script prints:
 -------------------------------------
 Summary
 -------------------------------------
-This project demonstrate a complete end-to-end machine learning workflow:
+This project demonstrates a complete end-to-end machine learning workflow:
 - Data acquisition
 - Cleaning & preprocessing
 - Feature engineering
@@ -146,3 +143,11 @@ This project demonstrate a complete end-to-end machine learning workflow:
 - Real-time prediction
 
 It highlights skills in Python, scikit-learn, data analysis, and ML model comparison.
+
+-------------------------------------
+Author
+-------------------------------------
+**Shivam Patel** <br>
+University of Central Arkansas - Department of Computer Science <br>
+LinkedIn: https://www.linkedin.com/in/shivampatel19/
+
